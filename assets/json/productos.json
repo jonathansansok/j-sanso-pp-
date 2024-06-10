@@ -4,7 +4,7 @@
     "precio": "560",
     "origen": "USA",
     "clase": "fotoDeCamaraHD",
-    "descrip": "Cámara HD clásica  para fotos de alta calidad.",
+    "descrip": "Cámara HD clásica.",
     "titulo": "CÁMARA HD SONY - Modelo Clásico"
     },
     {
@@ -12,15 +12,15 @@
     "precio": "500",
     "origen": "UK",
     "clase": "fotoDeCamaraHD",
-    "descrip": "Cámara HD británica ideal para fotografía profesional.",
-    "titulo": "CÁMARA HD SONY - Edición Especial"
+    "descrip": "HD británica .",
+    "titulo": "CÁMARA HD SONY"
     },
     {
     "id": "3",
     "precio": "550",
     "origen": "USA",
     "clase": "fotoDeDomo",
-    "descrip": "Domo de alta definición perfecto para recorridos virtuales emocionantes.",
+    "descrip": "Con trípode 2mts.",
     "titulo": "DOMO HD SSL-E"
     },
     {
@@ -28,8 +28,8 @@
     "precio": "570",
     "origen": "UK",
     "clase": "fotoDeDomo",
-    "descrip": "Domo HD moderno para experiencias de realidad virtual inmersivas.",
-    "titulo": "DOMO HD SSL-G - Última Tecnología"
+    "descrip": "360º inmersiva.",
+    "titulo": "DOMO HD - "
     },
     {
     "id": "5",
@@ -37,7 +37,7 @@
     "origen": "USA",
     "clase": "fotoDeCamaraHD",
     "descrip": "Cámara HD inspirada en 9mm para capturas únicas.",
-    "titulo": "CÁMARA HD JAPAN TEC. - Edición Especial"
+    "titulo": "CÁMARA HD JAPAN TEC."
     },
     {
     "id": "6",
@@ -45,39 +45,39 @@
     "origen": "UK",
     "clase": "fotoDeDomo",
     "descrip": "Domo de alta definición con 4k para recorridos virtuales 360.",
-    "titulo": "DOMO HD FUJI - Experiencia 360"
+    "titulo": "HD FUJI - Panoramica"
     },
     {
     "id": "7",
     "precio": "409",
     "origen": "USA",
     "clase": "fotoDeDomo",
-    "descrip": "Domo HD SONY-2500 con transparencia y claridad excepcionales.",
-    "titulo": "DOMO HD SONY-2500 - Calidad Profesional"
+    "descrip": "Transparent tone.",
+    "titulo": "DOMO HD SONY-2500 "
     },
     {
     "id": "8",
     "precio": "600",
     "origen": "UK",
     "clase": "fotoDeCamaraHD",
-    "descrip": "Cámara HD con cinta análogica tipo Sony Studer para capturas retro.",
-    "titulo": "CÁMARA HD TAPE - Estilo Vintage"
+    "descrip": "Cápturas retro.",
+    "titulo": " TAPE Vintage"
     },
     {
     "id": "9",
     "precio": "610",
     "origen": "USA",
     "clase": "fotoDeDomo",
-    "descrip": "Domo HD Pro-Reflex para recorridos virtuales suaves y envolventes.",
-    "titulo": "DOMO HD PRO-REFLEX - Sonido Angelical"
+    "descrip": "Ref ",
+    "titulo": "DOMO HD PRO-REFLEX"
     },
     {
     "id": "10",
     "precio": "603",
     "origen": "UK",
     "clase": "fotoDeDomo",
-    "descrip": "Domo para recorridos virtuales con espacialidad definitiva.",
-    "titulo": "DOMO HD TRIO-609 - Experiencia Unica"
+    "descrip": "Domo espacialidad 360º.",
+    "titulo": "DOMO HD TRIO-609"
     },
     {
     "id": "11",
@@ -85,14 +85,14 @@
     "origen": "UK",
     "clase": "fotoDeDomo",
     "descrip": "Domo para recorridos en 4k",
-    "titulo": "DOMO HD G-COMP - Experiencia Intensa"
+    "titulo": "DOMO HD G-COMP"
     },
     {
     "id": "12",
     "precio": "478",
     "origen": "USA",
     "clase": "fotoDeCamaraHD",
-    "descrip": "Cámara HD con filtros reflex para capturas vintage y suaves.",
-    "titulo": "CÁMARA HD VARI-MU - Estilo Clásico"
+    "descrip": "Filtros Reflex",
+    "titulo": "HD Canon"
     }
 ]

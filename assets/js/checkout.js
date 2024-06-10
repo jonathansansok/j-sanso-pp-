@@ -84,9 +84,8 @@ function vaciarCarrito() {
 }
 
 const volverATienda = () => {
-  window.location.href = "tienda.html";
+  window.location.href = "index.html";
 };
 
 document.getElementById("btnComprar").addEventListener("click", comprar);
-
-z;
+;

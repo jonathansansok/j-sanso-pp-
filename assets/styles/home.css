@@ -173,19 +173,16 @@ h1:hover {
 /* VIDEO HERO */
 .video-video-introCheckout {
   max-height: 120px;
- background-color: #000;
+  background-color: #000;
 }
-
-
 
 .position-relative {
   height: 100vh;
 }
 .videoBg {
-
   filter: brightness(0.8);
   bottom: 0;
-/*   height: 1080px; */
+  /*   height: 1080px; */
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1569,14 +1566,13 @@ main {
   align-items: center;
 }
 
-.boton-masinfo-3d-scan a{
+.boton-masinfo-3d-scan a {
   padding-top: 3px;
-text-decoration: none;
-color: #7fff00;
-font-size: 1.8rem;
-font-family: "MonumentExtended", sans-serif;
+  text-decoration: none;
+  color: #7fff00;
+  font-size: 1.8rem;
+  font-family: "MonumentExtended", sans-serif;
 }
-
 
 .boton-masinfo a {
   /*     width: 150px; */
@@ -1611,48 +1607,47 @@ font-family: "MonumentExtended", sans-serif;
   height: 150px;
 }
 
-.boton-masinfo3{
+.boton-masinfo3 {
   border: 1.5px solid black;
-border-radius: 10px;
-width: 250px;
-text-align: center;
-align-self: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.boton-masinfo3 a{
+.boton-masinfo3 a {
   padding-top: 3px;
-text-decoration: none;
-color: #7fff00;
-font-size: 1.8rem;
-font-family: "MonumentExtended", sans-serif;
+  text-decoration: none;
+  color: #7fff00;
+  font-size: 1.8rem;
+  font-family: "MonumentExtended", sans-serif;
 }
 
 /* burbujas */
-.bg_animate{
+.bg_animate {
   width: 100%;
   height: 100vh;
-/*   background: linear-gradient(to right, #005C98, #505BDA); */
+  /*   background: linear-gradient(to right, #005C98, #505BDA); */
   position: relative;
   overflow: hidden;
 }
 
-.burbuja{
+.burbuja {
   border-radius: 50%;
   background: #fff;
-  opacity: .3;
-z-index: -3;
+  opacity: 0.3;
+  z-index: -3;
   position: absolute;
   bottom: -150;
-  
-  animation: burbujas 3s linear infinite ;
+
+  animation: burbujas 3s linear infinite;
 }
 
-.burbuja:nth-child(1){
+.burbuja:nth-child(1) {
   width: 80px;
   height: 80px;
   left: 5%;
@@ -1660,7 +1655,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(2){
+.burbuja:nth-child(2) {
   width: 100px;
   height: 100px;
   left: 35%;
@@ -1668,7 +1663,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(3){
+.burbuja:nth-child(3) {
   width: 20px;
   height: 20px;
   left: 15%;
@@ -1676,7 +1671,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(4){
+.burbuja:nth-child(4) {
   width: 50px;
   height: 50px;
   left: 90%;
@@ -1684,7 +1679,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(5){
+.burbuja:nth-child(5) {
   width: 70px;
   height: 70px;
   left: 65%;
@@ -1692,7 +1687,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(6){
+.burbuja:nth-child(6) {
   width: 20px;
   height: 20px;
   left: 50%;
@@ -1700,7 +1695,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(7){
+.burbuja:nth-child(7) {
   width: 20px;
   height: 20px;
   left: 50%;
@@ -1708,7 +1703,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(8){
+.burbuja:nth-child(8) {
   width: 100;
   height: 100px;
   left: 52%;
@@ -1716,7 +1711,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(9){
+.burbuja:nth-child(9) {
   width: 65px;
   height: 65px;
   left: 51%;
@@ -1724,7 +1719,7 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-.burbuja:nth-child(10){
+.burbuja:nth-child(10) {
   width: 40px;
   height: 40px;
   left: 35%;
@@ -1732,117 +1727,114 @@ z-index: -3;
   animation-delay: 1s;
 }
 
-
-@keyframes burbujas{
-  0%{
-      bottom: 0;
-      opacity: 0;
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
   }
-  30%{
-      transform: translateX(30px);
+  30% {
+    transform: translateX(30px);
   }
-  50%{
-      opacity: .4;
+  50% {
+    opacity: 0.4;
   }
-  100%{
-      bottom: 100vh;
-      opacity: 0;
+  100% {
+    bottom: 100vh;
+    opacity: 0;
   }
 }
 
-@keyframes movimiento{
-  0%{
-      transform: translateY(0);
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
   }
-  50%{
-      transform: translateY(30px);  
+  50% {
+    transform: translateY(30px);
   }
-  100%{
-      transform: translateY(0);
+  100% {
+    transform: translateY(0);
   }
 }
 
 .animation-area {
   z-index: -500;
-	background-color: rgb(255, 20, 147);
-	width: 100%;
-
+  background-color: rgb(255, 20, 147);
+  width: 100%;
 }
 .box-area {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .box-area li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 25px;
-	height: 25px;
-	background: rgba(255, 255, 255, 0.2);
-	animation: animate 20s linear infinite;
-	top: -150px;
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+  top: -150px;
 }
 .box-area li:nth-child(1) {
-	left: 86%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 0s;
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
   animation-duration: 4s;
 }
 .box-area li:nth-child(2) {
-	left: 12%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 1.5s;
-	animation-duration: 4s;
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 4s;
 }
 .box-area li:nth-child(3) {
-	left: 70%;
-	width: 100px;
-	height: 100px;
-	animation-delay: 5.5s;
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
   animation-duration: 4s;
 }
 .box-area li:nth-child(4) {
-	left: 42%;
-	width: 150px;
-	height: 150px;
-	animation-delay: 0s;
-	animation-duration: 4s;
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 4s;
 }
 .box-area li:nth-child(5) {
-	left: 65%;
-	width: 40px;
-	height: 40px;
-	animation-delay: 0s;
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
   animation-duration: 4s;
 }
 .box-area li:nth-child(6) {
-	left: 15%;
-	width: 110px;
-	height: 110px;
-	animation-delay: 3.5s;
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
   animation-duration: 4s;
 }
 @keyframes animate {
-	0% {
-		transform: translateY(0) rotate(0deg);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(940px) rotate(360deg);
-		opacity: 0.4;
-	}
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(940px) rotate(360deg);
+    opacity: 0.4;
+  }
 }
 
-.contadorUnidades{
+.contadorUnidades {
   color: black;
 }
-
 
 .titleBuy {
   color: #45e562b7;
@@ -1987,7 +1979,8 @@ z-index: -3;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,600&display=swap");
 body {
-  background: rgba(0, 0, 0, 0.92) url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
+  background: rgba(0, 0, 0, 0.92)
+    url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2061,7 +2054,8 @@ body {
     background-position: 88% 0%;
   }
 }
-.bg-darky, .prendeTitle {
+.bg-darky,
+.prendeTitle {
   background-color: black;
 }
 
@@ -2281,7 +2275,9 @@ body {
   margin-bottom: 15px;
 }
 .product-rowy .data-1Text {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .product-rowy .data-1Tit {
   font-size: 1.5rem;
@@ -2505,7 +2501,8 @@ form {
   margin-top: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   margin-top: 10px;
   width: 100%;
   margin-bottom: 20px;
@@ -2517,7 +2514,8 @@ input, textarea {
   font-weight: bold;
   background-color: black;
 }
-input textarea, textarea textarea {
+input textarea,
+textarea textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
@@ -2841,8 +2839,13 @@ input textarea, textarea textarea {
   grid-area: producto;
   background-color: black;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
   color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
 }
 
 .cantidad {
@@ -2851,7 +2854,6 @@ input textarea, textarea textarea {
   border-radius: 10px;
   text-align: center;
   color: white;
-
 }
 
 .precio {
@@ -2860,7 +2862,6 @@ input textarea, textarea textarea {
   border-radius: 10px;
   text-align: center;
   color: white;
-
 }
 
 .metodoPago {
@@ -2869,7 +2870,7 @@ input textarea, textarea textarea {
   text-align: right;
   padding-right: 80px;
   border-radius: 10px;
-color: green;
+  color: green;
 }
 
 .terminar-y-comprar {
@@ -3164,11 +3165,11 @@ color: green;
 }
 
 .logIg {
-  color: #DD2A7B;
+  color: #dd2a7b;
 }
 
 .logLnk {
-  color: #0077B5;
+  color: #0077b5;
 }
 
 .logFb {
