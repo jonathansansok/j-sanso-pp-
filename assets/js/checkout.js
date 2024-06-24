@@ -59,19 +59,65 @@ const addItem = (idProducto) => {
   });
 };
 renderCheckOut();
-
 const comprar = () => {
-  swal({
-    title: "¡Gracias por comprar!",
-    text: "¡Te esperamos pronto!",
-    icon: "success",
-    button: "Aceptar",
+  const productos = JSON.parse(localStorage.getItem("carrito"));
+
+  // Construir el mensaje del SweetAlert con los elementos seleccionados del carrito
+  let mensaje = "<h5>Resumen de tu pedido:</h5>";
+  for (const prod of productos) {
+    mensaje += `<p>${prod.titulo} - Cantidad: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}</p>`;
+  }
+
+  // Mostrar SweetAlert con botones "Cerrar" y "Copiar"
+  Swal.fire({
+    title: "Resumen de tu pedido",
+    html: mensaje,
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonText: "Volver a Home",
+    cancelButtonText: "Copiar",
+    customClass: {
+      cancelButton: "copy-button" // Clase CSS personalizada para el botón de Copiar
+    }
   }).then((result) => {
-    vaciarCarrito();
-    volverATienda();
+    if (result.isConfirmed) {
+      vaciarCarrito(); // Vaciar el carrito después de confirmar la compra
+      volverATienda(); // Redirigir al usuario de vuelta a la tienda
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      // Copiar al portapapeles cuando se hace clic en Copiar
+      const textoACopiar = generarTextoACopiar(productos);
+      copiarAlPortapapeles(textoACopiar);
+    }
   });
 };
 
+// Función para generar el texto que se copiará al portapapeles
+const generarTextoACopiar = (productos) => {
+  let texto = "Resumen de la compra:\n";
+  for (const prod of productos) {
+    texto += `${prod.titulo} - Cant.: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}\n`;
+  }
+  return texto;
+};
+
+// Función para copiar texto al portapapeles
+const copiarAlPortapapeles = (texto) => {
+  const textarea = document.createElement("textarea");
+  textarea.value = texto;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+
+  Swal.fire("Copiado al portapapeles", "", "success");
+};
+
+// Evento al hacer click en el botón "Listo, comprar y terminar"
+document.getElementById("btnComprar").addEventListener("click", comprar);
+
+
+// Evento al hacer click en el botón "Listo, comprar y terminar"
+document.getElementById("btnComprar").addEventListener("click", comprar);
 function comparando() {
   const finalCero = document.querySelector("#finalCeroQuizas");
   if (finalCero.innerText == 0) {
