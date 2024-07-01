@@ -43,7 +43,7 @@
 }
 .cielo {
   height: 520px;
-  background-image: url("../assets/img/sofa.jpg");
+  background-image: url("../img/sofa.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1139,7 +1139,7 @@ svg {
   /*  background-color: #000; */
   color: #fff;
   padding: 40px 0px;
-  background-image: url("../assets/img/pattern2.png");
+  background-image: url('../img/pattern2.png');
   background-size: contain;
   background-position: center;
   opacity: disabled;

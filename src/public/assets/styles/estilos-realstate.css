@@ -50,7 +50,7 @@ border-radius: 8px;
 }
 .cielo{ 
     height: 520px;
-    background-image: url("./imagenes2/poseidon.jpg");     
+    background-image: url("../img/poseidon.jpg");     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -721,7 +721,7 @@ h1:hover{
     /*  background-color: #000; */
      color: #fff;
      padding: 40px 0px;
-     background-image: url('../assets/img/pattern2.png');
+     background-image: url('../img/pattern2.png');
      background-size: contain;
      background-position: center;
      opacity: disabled;
