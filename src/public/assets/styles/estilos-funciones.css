@@ -774,6 +774,12 @@ svg {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
 }
+@media (max-width: 520px) {
+  .contenedor{ 
+    height: 450px;
+  }
+}
+
 /*TERMINA ESTILO DE TAB*/
 
 .modoDeMedicion {
