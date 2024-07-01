@@ -1978,15 +1978,6 @@ main {
   background-size: cover;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;1,600&display=swap");
-body {
-  background: rgba(0, 0, 0, 0.92)
-    url("../elements/elementos/images/vsts-y-wallpapers/wallpaper-ondas.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: darken;
-}
 
 .product-rowy {
   padding-bottom: 0px;
