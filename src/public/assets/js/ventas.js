@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     function cargarJson() {
-    fetch("../json/productos.json")
+    fetch("../public/assets/json/productos.json")
         .then((resp) => resp.json())
         .then((data) => {
         tratandoJson = data;
