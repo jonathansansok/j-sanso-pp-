@@ -693,7 +693,7 @@ svg {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 0.5em;
-  background-color: var(--blanco);
+  background-color: white;
   -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
           box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
 }
@@ -740,13 +740,14 @@ svg {
 
 
 .contenedor .li.activo {
-  background-color: lightskyblue;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .contenedor .subcontenedor {
   min-height: 10vh;
   position: relative;
+  background-color: white;
 }
 
 .contenedor .bloque {
@@ -754,16 +755,16 @@ svg {
   padding: 1em;
   position: absolute;
   top: 2em;
-  color: var(--negro);
+  color: black;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 0.5em;
-  background-color: var(--blanco);
-  -webkit-box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-          box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  background-color: white;
+  -webkit-box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.1), -0.3em -0.3em 0.6em rgba(0, 0, 0, 0.1), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.1), -0.3em -0.3em 0.6em rgba(0, 0, 0, 0.1), inset 0 0 0 transparent, inset 0 0 0 transparent;
   opacity: 0;
   -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -771,9 +772,8 @@ svg {
 .contenedor .bloque.activo {
   opacity: 1;
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
-
 /*TERMINA ESTILO DE TAB*/
 
 .modoDeMedicion {
