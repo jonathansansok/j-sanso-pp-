@@ -63,7 +63,7 @@ const comprar = () => {
   const productos = JSON.parse(localStorage.getItem("carrito"));
 
   // Construir el mensaje del SweetAlert con los elementos seleccionados del carrito
-  let mensaje = "<h5>Resumen de tu pedido:</h5>";
+  let mensaje = "📌<h5>Resumen de tu pedido:</h5>";
   for (const prod of productos) {
     mensaje += `<p>${prod.titulo} - Cantidad: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}</p>`;
   }
