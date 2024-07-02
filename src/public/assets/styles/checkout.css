@@ -43,21 +43,39 @@ h5{
     cursor: pointer; /* Cursor de tipo puntero */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    margin-top: 22px;
   }
   
   .btn-comprar:hover {
     background-color: #45a049; /* Color de fondo al pasar el mouse */
   }
+
+  .containerCheckout{
+    max-width: 600px;
+  }
 .datosPersonales{
     width: 500px;
     display: flex;
     flex-direction: row ;
-    gap: 20px;
-    margin-bottom: 50px;
+    gap: 5px;
+    margin-top: 20px;
+    align-items: center;
+
+
     color: #45a049;
 }
 
 .input-field{
     border-radius: 10px;
+    width: 150px;
     color: green;
+}
+.metodoPago{
+    font-size: 20px !important;
+}
+#finalCeroQuizas{
+    font-size: 20px;
+}
+h5{
+    font-size: 12px !important;
 }
