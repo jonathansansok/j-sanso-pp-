@@ -2735,9 +2735,7 @@ textarea textarea {
 }
 
 @media (max-width: 580px) {
-    .containerCheckout {
-    grid-template-columns: 1fr; /* Ajustar a una sola columna o según necesites */
-  }
+  
 h3{
   font-size: 17px !important;
 }
@@ -2745,19 +2743,23 @@ h3{
     font-size: 17px !important;
   }
   .producto{
-    max-width: 190px;
+    max-width: 70px;
   }
   .canti{
-    max-width: 190px;
+    max-width: 70px;
   }
   .cantidad{
-    max-width: 190px;
+    max-width: 70px;
   }
   .prec{
-    width: 60px;
+    width: 70px;
   }
 }
 
+@media (max-width: 580px) {
+.metodoPago {
+max-width: 300px;
+}}
 
 .metodoPago {
   grid-area: metodoPago;

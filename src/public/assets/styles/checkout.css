@@ -33,43 +33,31 @@ h5{
 .swal2-styled.swal2-cancel.copy-button {
     background-color: green;
   }
-
-  .input-container {
-    margin-bottom: 20px;
-  }
-  
-  .input-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .input-field {
-    width: calc(100% - 20px);
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .input-field:focus {
-    outline: none;
-    border-color: #4CAF50;
-  }
-  
   .btn-comprar {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Quita el borde */
+    border-radius: 10px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de tipo puntero */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
   }
   
   .btn-comprar:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
   }
+.datosPersonales{
+    width: 500px;
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+    margin-bottom: 50px;
+    color: #45a049;
+}
+
+.input-field{
+    border-radius: 10px;
+    color: green;
+}

@@ -90,7 +90,7 @@ const comprar = (nombre, apellido, ubicacion) => {
     icon: "info",
     showCancelButton: true,
     confirmButtonText: "Volver a Home",
-    cancelButtonText: "Copiar",
+    cancelButtonText: "Copiar y enviar por What's App",
     customClass: {
       cancelButton: "copy-button" // Clase CSS personalizada para el botón de Copiar
     }
