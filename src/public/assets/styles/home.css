@@ -2265,7 +2265,7 @@ main {
   align-self: center;
   margin-bottom: 15px;
 }
-.product-rowy .data-1Text {
+/* .product-rowy .data-1Text {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -2273,7 +2273,7 @@ main {
 .product-rowy .data-1Tit {
   font-size: 1.5rem;
 }
-
+ */
 #lastCard {
   margin-bottom: 5%;
 }
@@ -2856,6 +2856,31 @@ textarea textarea {
   text-align: center;
   color: white;
 }
+
+@media (max-width: 580px) {
+    .containerCheckout {
+    grid-template-columns: 1fr; /* Ajustar a una sola columna o según necesites */
+  }
+h3{
+  font-size: 17px !important;
+}
+  h5{
+    font-size: 17px !important;
+  }
+  .producto{
+    max-width: 190px;
+  }
+  .canti{
+    max-width: 190px;
+  }
+  .cantidad{
+    max-width: 190px;
+  }
+  .prec{
+    width: 60px;
+  }
+}
+
 
 .metodoPago {
   grid-area: metodoPago;
