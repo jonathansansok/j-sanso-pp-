@@ -1836,15 +1836,6 @@ main {
   color: black;
 }
 
-.titleBuy {
-  color: #45e562b7;
-  padding: 0px 10px;
-  border: 2px solid #45e562b7;
-  border-radius: 5px;
-  background-color: black;
-  margin-top: 10px;
-  margin-bottom: 7px;
-}
 
 .fotoDeApi {
   width: 80%;
@@ -2485,14 +2476,13 @@ main {
 form {
   width: 450px;
   margin: auto;
-  background: rgba(33, 157, 214, 0.1);
-  padding: 10px 20px;
+  background: white; /* Fondo blanco */
+  padding: 20px; /* Aumentado el padding para más espacio alrededor del contenido */
   box-sizing: border-box;
-  border-radius: 7px;
-  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra suave */
   margin-top: 10px;
 }
-
 input,
 textarea {
   margin-top: 10px;
@@ -2557,7 +2547,7 @@ textarea textarea {
 }
 
 .todosParametros {
-  background-color: salmon;
+  background-color: white;
   width: 80%;
   font-weight: bold;
   height: 60px;
@@ -2568,6 +2558,7 @@ textarea textarea {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .todosParametros label {
   margin-top: 10px;
@@ -2584,11 +2575,18 @@ textarea textarea {
 }
 
 .shoppingTodo {
-  background-color: black;
+  background-color: white; /* Fondo blanco */
   border-radius: 3px;
   width: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: center; /* Centra los elementos dentro del contenedor */
+  align-items: center; /* Centra verticalmente los elementos */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.shoppingTodo:hover {
+  background-color: #ff1493; /* Cambio de color de fondo al pasar el mouse */
 }
 
 .checkoutWay {
@@ -2617,7 +2615,7 @@ textarea textarea {
 
 .buyApi {
   box-sizing: border-box;
-  background-color: #4ca725;
+  background-color: white;
   width: 32.85%;
   display: flex;
   flex-direction: column;
@@ -2625,149 +2623,28 @@ textarea textarea {
   align-items: center;
   border-radius: 10px;
   text-align: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
+  padding: 20px; /* Ajusta según sea necesario */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .titleBuy {
-  color: #45e562b7;
-  padding: 0px 10px;
-  border: 2px solid #45e562b7;
-  border-radius: 5px;
-  background-color: black;
+  color: black; /* Color de texto */
+  padding: 5px 10px; /* Padding interno */
+  border: 2px solid #45e562b7; /* Borde sólido */
+  border-radius: 5px; /* Esquinas redondeadas */
+  background-color: white; /* Fondo blanco */
   margin-top: 10px;
   margin-bottom: 7px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transiciones suaves */
 }
 
-.fotoDeApi {
-  width: 80%;
-  height: 150px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/api2-rezi.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.titleBuy:hover {
+  background-color: #6ccf8acc; /* Cambio de color de fondo al pasar el mouse */
+   /* Cambio de color de texto */
+
 }
 
-.fotoDeNeve {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/pre-neve.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeSsl-e {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/ssl-e-rezi.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeSsl-g {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/ssl-g-rezi.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeTrident {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/trident.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeTelefunken {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/telefunken-ok.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeApi-2500 {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/api-2500.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeTape {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/vsts-y-wallpapers/cinta-analog.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeReverb {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/fotos-cards/pror3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeTriode-609 {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/fotos-cards/neve-compress.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeG-comp {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/fotos-cards/ssl-comp.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fotoDeVari-mu {
-  width: 80%;
-  height: 140px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: url("../elements/elementos/images/tienda/vari-mu.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .textoDeBuy {
   margin: 5px 10px 0px 10px;

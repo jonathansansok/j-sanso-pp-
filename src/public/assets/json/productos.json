@@ -1,98 +1,86 @@
 [
     {
-    "id": "1",
-    "precio": "560",
-    "origen": "USA",
-    "clase": "fotoDeCamaraHD",
-    "descrip": "Cámara HD clásica.",
-    "titulo": "CÁMARA HD SONY - Modelo Clásico"
+        "id": "1",
+        "precio": "45",
+        "origen": "HD",
+        "descrip": "Con las mejores cámaras de USA.",
+        "titulo": "360 3 pisos o menos"
     },
     {
-    "id": "2",
-    "precio": "500",
-    "origen": "UK",
-    "clase": "fotoDeCamaraHD",
-    "descrip": "HD británica .",
-    "titulo": "CÁMARA HD SONY"
+        "id": "2",
+        "precio": "35",
+        "origen": "HD",
+        "descrip": "Capturas en alta definición.",
+        "titulo": "Cámara 3D Pro - 2 pisos"
     },
     {
-    "id": "3",
-    "precio": "550",
-    "origen": "USA",
-    "clase": "fotoDeDomo",
-    "descrip": "Con trípode 2mts.",
-    "titulo": "DOMO HD SSL-E"
+        "id": "3",
+        "precio": "50",
+        "origen": "4K",
+        "descrip": "Captura inmersiva 360°.",
+        "titulo": "Recorrido Virtual Pro"
     },
     {
-    "id": "4",
-    "precio": "570",
-    "origen": "UK",
-    "clase": "fotoDeDomo",
-    "descrip": "360º inmersiva.",
-    "titulo": "DOMO HD - "
+        "id": "4",
+        "precio": "40",
+        "origen": "4K",
+        "descrip": "Para tours virtuales completos.",
+        "titulo": "Domo 360 Tour"
     },
     {
-    "id": "5",
-    "precio": "600",
-    "origen": "USA",
-    "clase": "fotoDeCamaraHD",
-    "descrip": "7.1mm ",
-    "titulo": "CAM HD JAPAN TEC."
+        "id": "5",
+        "precio": "48",
+        "origen": "4K",
+        "descrip": "Imágenes en 3D nítidas.",
+        "titulo": "Cámara HD 3D Max"
     },
     {
-    "id": "6",
-    "precio": "505",
-    "origen": "UK",
-    "clase": "fotoDeDomo",
-    "descrip": "Lander width",
-    "titulo": "HD FUJI - PANORAM"
+        "id": "6",
+        "precio": "38",
+        "origen": "HD",
+        "descrip": "Vista panorámica perfecta.",
+        "titulo": "Panorama 360 Pro"
     },
     {
-    "id": "7",
-    "precio": "409",
-    "origen": "USA",
-    "clase": "fotoDeDomo",
-    "descrip": "Transparent tone.",
-    "titulo": "DOMO HD SONY-2500 "
+        "id": "7",
+        "precio": "42",
+        "origen": "HD",
+        "descrip": "Para experiencias de realidad aumentada.",
+        "titulo": "Domo RA Expert"
     },
     {
-    "id": "8",
-    "precio": "600",
-    "origen": "UK",
-    "clase": "fotoDeCamaraHD",
-    "descrip": "Cápturas retro.",
-    "titulo": " TAPE Vintage"
+        "id": "8",
+        "precio": "30",
+        "origen": "HD",
+        "descrip": "Captura de escenas 3D retro.",
+        "titulo": "Cámara Vintage 3D"
     },
     {
-    "id": "9",
-    "precio": "610",
-    "origen": "USA",
-    "clase": "fotoDeDomo",
-    "descrip": "Ref ",
-    "titulo": "DOMO HD PRO-REFLEX"
+        "id": "9",
+        "precio": "50",
+        "origen": "4K",
+        "descrip": "Para recorridos virtuales en detalle.",
+        "titulo": "Domo Virtual Reflex"
     },
     {
-    "id": "10",
-    "precio": "603",
-    "origen": "UK",
-    "clase": "fotoDeDomo",
-    "descrip": "Domo espacialidad 360º.",
-    "titulo": "DOMO HD TRIO-609"
+        "id": "10",
+        "precio": "28",
+        "origen": "HD",
+        "descrip": "Perfecta para espacios abiertos.",
+        "titulo": "Domo Espacial 360"
     },
     {
-    "id": "11",
-    "precio": "655",
-    "origen": "UK",
-    "clase": "fotoDeDomo",
-    "descrip": "Domo para recorridos en 4k",
-    "titulo": "DOMO HD G-COMP"
+        "id": "11",
+        "precio": "47",
+        "origen": "4K",
+        "descrip": "Recorridos en 4K y realidad aumentada.",
+        "titulo": "Domo 4K RA Pro"
     },
     {
-    "id": "12",
-    "precio": "478",
-    "origen": "USA",
-    "clase": "fotoDeCamaraHD",
-    "descrip": "Filtros Reflex",
-    "titulo": "HD Canon"
+        "id": "12",
+        "precio": "25",
+        "origen": "HD",
+        "descrip": "Con filtros avanzados.",
+        "titulo": "Cámara Reflex 3D"
     }
 ]

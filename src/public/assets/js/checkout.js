@@ -130,7 +130,7 @@ function vaciarCarrito() {
 }
 
 const volverATienda = () => {
-  window.location.href = "index.html";
+  window.location.href = "/../../src/index.html";
 };
 
 document.getElementById("btnComprar").addEventListener("click", comprar);
