@@ -1,86 +1,86 @@
 [
     {
         "id": "1",
-        "precio": "45",
+        "precio": "80",
         "origen": "HD",
-        "descrip": "Con las mejores cámaras de USA.",
-        "titulo": "360 3 pisos o menos"
+        "descrip": "Captura en alta definición para recorridos interiores detallados.",
+        "titulo": "Cámara HD Interior Detallada - 1 a 3 pisos"
     },
     {
         "id": "2",
-        "precio": "35",
+        "precio": "180",
         "origen": "HD",
-        "descrip": "Capturas en alta definición.",
-        "titulo": "Cámara 3D Pro - 2 pisos"
+        "descrip": "Panorama HD de alta calidad para recorridos exteriores amplios.",
+        "titulo": "Panorama HD Exterior Amplio - 4 a 6 pisos"
     },
     {
         "id": "3",
-        "precio": "50",
+        "precio": "300",
         "origen": "4K",
-        "descrip": "Captura inmersiva 360°.",
-        "titulo": "Recorrido Virtual Pro"
+        "descrip": "Recorrido virtual 360° en ultra alta definición para experiencias inmersivas.",
+        "titulo": "Recorrido 4K 360° Inmersivo - 7 a 10 pisos"
     },
     {
         "id": "4",
-        "precio": "40",
+        "precio": "500",
         "origen": "4K",
-        "descrip": "Para tours virtuales completos.",
-        "titulo": "Domo 360 Tour"
+        "descrip": "Tours completos con visión envolvente en 4K para todos los espacios.",
+        "titulo": "Domo 4K Completo para Todos los Espacios - 11 a 15 pisos"
     },
     {
         "id": "5",
-        "precio": "48",
+        "precio": "680",
         "origen": "4K",
-        "descrip": "Imágenes en 3D nítidas.",
-        "titulo": "Cámara HD 3D Max"
+        "descrip": "Imágenes en 3D y recorridos interactivos en ultra alta definición para edificios altos y prendas de vestir.",
+        "titulo": "Cámara 4K 3D Interactiva para Edificios Altos - 16 a 20 pisos"
     },
     {
         "id": "6",
-        "precio": "38",
+        "precio": "500",
         "origen": "HD",
-        "descrip": "Vista panorámica perfecta.",
-        "titulo": "Panorama 360 Pro"
+        "descrip": "Captura detallada para espacios abiertos y áreas extensas.",
+        "titulo": "Cámara HD para Espacios Abiertos Extensos - 7 a 10 pisos"
     },
     {
         "id": "7",
-        "precio": "42",
+        "precio": "300",
         "origen": "HD",
-        "descrip": "Para experiencias de realidad aumentada.",
-        "titulo": "Domo RA Expert"
+        "descrip": "Experiencias inmersivas de realidad aumentada en alta definición para propiedades pequeñas.",
+        "titulo": "Domo HD RA para Propiedades Pequeñas - 1 a 3 pisos"
     },
     {
         "id": "8",
-        "precio": "30",
+        "precio": "490",
         "origen": "HD",
-        "descrip": "Captura de escenas 3D retro.",
-        "titulo": "Cámara Vintage 3D"
+        "descrip": "Captura de escenas y frames en 3D para indumentaria histórica.",
+        "titulo": "Cámara HD 3D Retro para Indumentaria Histórica - 4 a 6 pisos"
     },
     {
         "id": "9",
-        "precio": "50",
+        "precio": "700",
         "origen": "4K",
-        "descrip": "Para recorridos virtuales en detalle.",
-        "titulo": "Domo Virtual Reflex"
+        "descrip": "Detalles nítidos y precisos para recorridos virtuales avanzados en estructuras complejas.",
+        "titulo": "Domo 4K Virtual para Estructuras Complejas - 11 a 15 pisos"
     },
     {
         "id": "10",
-        "precio": "28",
+        "precio": "800",
         "origen": "HD",
-        "descrip": "Perfecta para espacios abiertos.",
-        "titulo": "Domo Espacial 360"
+        "descrip": "Visión panorámica perfecta para recorridos extensos y complejos.",
+        "titulo": "Panorama HD Extensivo y Complejo - 16 a 20 pisos"
     },
     {
         "id": "11",
-        "precio": "47",
+        "precio": "480",
         "origen": "4K",
-        "descrip": "Recorridos en 4K y realidad aumentada.",
-        "titulo": "Domo 4K RA Pro"
+        "descrip": "Recorridos en ultra alta definición y realidad aumentada para desarrollos modernos.",
+        "titulo": "Domo 4K RA Avanzado para Desarrollos Modernos - 7 a 10 pisos"
     },
     {
         "id": "12",
-        "precio": "25",
+        "precio": "150",
         "origen": "HD",
-        "descrip": "Con filtros avanzados.",
-        "titulo": "Cámara Reflex 3D"
+        "descrip": "Captura detallada con filtros avanzados para efectos especiales en propiedades exclusivas y moda.",
+        "titulo": "Cámara HD con Filtros 3D para Propiedades Exclusivas y Moda"
     }
 ]
