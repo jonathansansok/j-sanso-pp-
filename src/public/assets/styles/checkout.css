@@ -30,115 +30,105 @@
   .swal2-styled.swal2-cancel.copy-button {
     background-color: green;
   }
-  
-  .btn-comprar {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
-    border: none; /* Quita el borde */
-    border-radius: 10px; /* Borde redondeado */
-    cursor: pointer; /* Cursor de tipo puntero */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-    margin-top: 22px;
-  }
-  
-  .btn-comprar:hover {
-    background-color: #45a049; /* Color de fondo al pasar el mouse */
-  }
-  
-  /* Estilos para el checkout */
-  .containerCheckout {
-    display: grid;
-    grid-template-columns: auto 1fr 1fr; /* Primera columna auto para el producto, luego dos columnas iguales */
-    grid-template-rows: auto auto auto auto; /* Ajusta según necesites */
-    gap: 10px; /* Espacio entre las celdas */
-    padding: 20px; /* Espaciado interno */
-    background-color: #f5f5f5; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-  }
-  
-  .producto {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 1 / span 4; /* Ocupa 4 filas */
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-  }
-  
-  .canti,
-  .prec {
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 5px; /* Bordes redondeados */
 
-  }
-  
-  .canti h3,
-  .prec h3 {
-    margin-bottom: 5px; /* Espacio entre el título y el valor */
-  }
-  
-  .canti div,
-  .prec div {
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-  }
-  
-  .metodoPago {
-    grid-area: metodoPago; /* Ajusta según tu diseño */
-    background-color: black;
-    text-align: right;
-    padding-right: 80px;
-    border-radius: 2px;
-    color: green;
-    font-size: 20px;
-  }
-  
-  @media (max-width: 580px) {
-    h3,
-    h5 {
-      font-size: 17px !important;
-    }
-  
-    .producto,
-    .canti,
-    .cantidad,
-    .prec {
-      max-width: 70px; /* Limita el ancho en pantallas pequeñas */
-    }
-  
-    .metodoPago {
-      max-width: 300px; /* Limita el ancho del método de pago */
-    }
-  }
-  
-  .terminar-y-comprar {
-    grid-area: terminar-y-comprar;
-    background-color: #d4c1c1;
-    border-radius: 10px;
-    background-color: green; /* Ajusta el color de fondo */
-  }
-  
-  .botonesCheckout {
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
-    background-color: #d4c1c1; /* Ajusta el color de fondo */
-    align-self: center;
-    border: 0px;
-    padding: 0px 5px;
-    background-color: transparent; /* Fondo transparente */
-  }
 
-  @media (max-width: 768px) {
-    .containerCheckout {
-      grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
-    }
-  
-    .datosPersonales {
-      order: 1; /* Cambia el orden para que aparezca después del producto */
-    }
-  }
+
+  .articlesCheckOut {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.containerCheckout {
+    margin: 20px;
+}
+
+.formCheckOut {
+    background-color: #f2f2f2; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+    margin-bottom: 20px;
+}
+
+#nombre, #apellido, #direccion {
+    color: #333; /* Texto oscuro */
+    font-weight: bold; /* Fuente un poco más gruesa */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#nombre:hover, #apellido:hover, #direccion:hover {
+    border-color: #007bff; /* Borde azul al pasar el mouse */
+}
+
+.btn {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+}
+
+.total {
+    margin-top: 20px;
+    border-top: 2px solid #ccc; /* Borde gris claro */
+    padding-top: 10px;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+}
+
+/* Otras clases y estilos adicionales según sea necesario */
+/* Estilos para los botones de cantidad */
+.btnCantidad {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btnCantidad:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para el botón de resta */
+.btnMenos {
+  border-radius: 10%;
+}
+
+/* Estilos para el contenedor de productos */
+.producto {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la cantidad */
+.cantidad {
+  font-weight: bold;
+  margin: 0 10px;
+}

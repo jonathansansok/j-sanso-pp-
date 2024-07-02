@@ -109,45 +109,21 @@
       </div>
     </header>
 
-    <main class="articles">
+    <main class="articles articlesCheckOut">
       <h1 class="titleParticularCommerce">Checkout</h1>
       <h2 class="subtitleResp">Tu futuro 360º se ve así:</h2>
-      <div class="containerCheckout">
-        <div class="producto" id="divProducto"></div>
-        <div class="canti">
-
-          <div id="divCantidad"></div>
-        </div>
-        <div class="prec">
-
-          <div id="divPrecio"></div>
-        </div>
-      
-        <div class="metodoPago" id="precioFinal">
-          <h3>Precio Final:</h3>
-        </div>
-      
-        <div class="datosPersonales">
-          <div class="input-container">
-            <label for="nombre" class="input-label">Nombre:</label>
-            <input type="text" id="nombre" class="input-field" required>
-          </div>
-          <div class="input-container">
-            <label for="apellido" class="input-label">Apellido:</label>
-            <input type="text" id="apellido" class="input-field" required>
-          </div>
-          <div class="input-container">
-            <label for="ubicacion" class="input-label">Ubicación:</label>
-            <input type="text" id="ubicacion" class="input-field" required>
-          </div>
-          <button id="btnComprar" class="btn-comprar" onclick="validarDatos()">Enviar</button>
-        </div>
-      </div>
-      
-      
-
-    </main>
-
+      <div class="containerCheckout"></div>
+  
+      <form class="formCheckOut" id="formDatos">
+          <input type="text" id="nombre" placeholder="Nombre">
+          <input type="text" id="apellido" placeholder="Apellido">
+          <input type="text" id="direccion" placeholder="Dirección">
+          
+          <!-- Botón "Enviar por WhatsApp" dentro del formulario -->
+          <button id="btnEnviarWhatsApp" class="btn btn-success mt-3">Enviar por WhatsApp</button>
+      </form>
+  </main>
+  
     <footer data-aos="fade-up" class="footer">
       <div>
         <p class="text1_footer">

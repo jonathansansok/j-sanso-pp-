@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         localStorage.setItem("carrito", JSON.stringify(carrito));
         actualizarCantidadCarrito();
+        console.log("Carrito actualizado:", carrito);
     };
 
     function cargarJson() {
