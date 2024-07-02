@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const btnEnviarWhatsApp = document.getElementById("btnEnviarWhatsApp");
-  btnEnviarWhatsApp.addEventListener("click", () => {
+  btnEnviarWhatsApp.addEventListener("click", (event) => {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del formulario
     enviarPorWhatsApp();
   });
 
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let mensaje = generarTextoACopiar(productos, nombre, apellido, direccion);
 
     Swal.fire({
-      title: "Resumen de tu pedido",
+      title: "Quiero saber mas sobre estos servicios",
       html: mensaje,
       icon: "info",
       showCancelButton: true,
