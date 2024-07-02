@@ -129,10 +129,21 @@
         <div class="metodoPago" id="precioFinal">
           <h3>Precio Final:</h3>
         </div>
-        <button type="button" class="terminar-y-comprar" id="btnComprar">
-          <h3>Listo, comprar y terminar</h3>
-        </button>
+        <div>
+        <div class="input-container">
+          <label for="nombre" class="input-label">Nombre:</label>
+          <input type="text" id="nombre" class="input-field" required>
+        </div>
+        <div class="input-container">
+          <label for="apellido" class="input-label">Apellido:</label>
+          <input type="text" id="apellido" class="input-field" required>
+        </div>
+        <div class="input-container">
+          <label for="ubicacion" class="input-label">Ubicación:</label>
+          <input type="text" id="ubicacion" class="input-field" required>
+        </div>
       </div>
+        <button id="btnComprar" class="btn-comprar" onclick="validarDatos()">Listo, comprar y terminar</button>
     </main>
 
     <footer data-aos="fade-up" class="footer">

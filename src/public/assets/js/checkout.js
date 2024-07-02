@@ -61,13 +61,26 @@ const addItem = (idProducto) => {
 
 renderCheckOut();
 
-const comprar = () => {
-  const productos = JSON.parse(localStorage.getItem("carrito"));
+const validarDatos = () => {
+  const nombre = document.getElementById("nombre").value.trim();
+  const apellido = document.getElementById("apellido").value.trim();
+  const ubicacion = document.getElementById("ubicacion").value.trim();
 
+  if (nombre === "" || apellido === "" || ubicacion === "") {
+    alert("Por favor completa todos los campos: Nombre, Apellido y Ubicación.");
+    return;
+  }
+
+  comprar(nombre, apellido, ubicacion);
+};
+
+const comprar = (nombre, apellido, ubicacion) => {
   // Construir el mensaje del SweetAlert con los elementos seleccionados del carrito
-  let mensaje = "📌<h5>Resumen de tu pedido:</h5>";
+  let mensaje =
+    `📌 Hola, soy ${nombre} ${apellido}, este es mi pedido de tus servicios y uso este número de WhatsApp, muchas gracias!\n\n` +
+    "Resumen del pedido:\n";
   for (const prod of productos) {
-    mensaje += `<p>${prod.titulo} - Cantidad: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}</p>`;
+    mensaje += `${prod.titulo} - Cant.: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}\n`;
   }
 
   // Mostrar SweetAlert con botones "Cerrar" y "Copiar"
@@ -77,7 +90,7 @@ const comprar = () => {
     icon: "info",
     showCancelButton: true,
     confirmButtonText: "Volver a Home",
-    cancelButtonText: "Enviar por What´s App",
+    cancelButtonText: "Copiar",
     customClass: {
       cancelButton: "copy-button" // Clase CSS personalizada para el botón de Copiar
     }
@@ -95,7 +108,7 @@ const comprar = () => {
 
 // Función para generar el texto que se copiará al portapapeles
 const generarTextoACopiar = (productos) => {
-  let texto = "Resumen del pedido:\n";
+  let texto = "Resumen:\n";
   for (const prod of productos) {
     texto += `${prod.titulo} - Cant.: ${prod.cantidad} - Precio Total: ${prod.precio * prod.cantidad}\n`;
   }
@@ -103,17 +116,13 @@ const generarTextoACopiar = (productos) => {
 };
 
 // Función para copiar texto al portapapeles y abrir WhatsApp con el contenido
-// Función para copiar texto al portapapeles y abrir WhatsApp con el contenido
 const copiarAlPortapapeles = (texto) => {
   const telefono = "+5491169123268"; // Número de teléfono de WhatsApp
   const titulo = "Hola, este es mi pedido de tus servicios y uso este número de WhatsApp, muchas gracias!\n\n"; // Título del mensaje inicial
-
-  // Codificar el título y el mensaje principal para URL
-  const tituloCodificado = encodeURIComponent(titulo);
-  const mensajeCodificado = encodeURIComponent(titulo + texto);
+  const mensaje = encodeURIComponent(titulo + texto); // Codificar el mensaje para URL
 
   // Construir el enlace de WhatsApp con el número y el mensaje
-  const whatsappURL = `https://wa.me/${telefono}?text=${mensajeCodificado}`;
+  const whatsappURL = `https://wa.me/${telefono}?text=${mensaje}`;
 
   // Abrir la ventana de WhatsApp en una nueva pestaña
   window.open(whatsappURL, "_blank");
@@ -128,10 +137,6 @@ const copiarAlPortapapeles = (texto) => {
 
   Swal.fire("Copiado al portapapeles", "", "success");
 };
-
-
-// Evento al hacer click en el botón "Listo, comprar y terminar"
-document.getElementById("btnComprar").addEventListener("click", comprar);
 
 function comparando() {
   const finalCero = document.querySelector("#finalCeroQuizas");
