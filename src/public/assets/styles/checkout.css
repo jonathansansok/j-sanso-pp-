@@ -132,3 +132,10 @@
   font-weight: bold;
   margin: 0 10px;
 }
+
+.btnEliminar{
+  margin-left: 15px;
+  color: white;
+  border-radius: 10px;
+  border: 1px;
+}
