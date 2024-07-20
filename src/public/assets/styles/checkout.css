@@ -45,11 +45,11 @@
 }
 
 .formCheckOut {
-    background-color: #f2f2f2; /* Fondo gris claro */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra tenue */
-    margin-bottom: 20px;
+  padding: 30px;
+  border: 1px solid #ccc; /* Usamos el borde del último estilo */
+  border-radius: 5px; /* Usamos el borde redondeado del primer estilo */
+  box-shadow: 0 0 15px rgba(121, 120, 120, 0.7); /* Sombra gris del último estilo */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave del último estilo */
 }
 
 #nombre, #apellido, #direccion {
@@ -86,13 +86,7 @@
     padding-top: 10px;
 }
 
-.producto {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra tenue */
-}
+
 
 /* Otras clases y estilos adicionales según sea necesario */
 /* Estilos para los botones de cantidad */
@@ -119,13 +113,17 @@
 }
 
 /* Estilos para el contenedor de productos */
+/* Estilos para el contenedor de productos */
 .producto {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Usamos el borde del último estilo */
+  border-radius: 5px; /* Usamos el borde redondeado del primer estilo */
+  box-shadow: 0 0 15px rgba(121, 120, 120, 0.7); /* Sombra gris del último estilo */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave del último estilo */
+
 }
+
 
 /* Estilos para la cantidad */
 .cantidad {
@@ -133,9 +131,34 @@
   margin: 0 10px;
 }
 
-.btnEliminar{
+.btnEliminar {
   margin-left: 15px;
-  color: white;
-  border-radius: 10px;
-  border: 1px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.btnEliminar:hover {
+  background-color: #f5f5f5; /* Color de fondo al pasar el cursor */
+  box-shadow: 0 0 15px rgba(128, 128, 128, 1); /* Sombra más pronunciada al pasar el cursor */
+}
+
+.btnMenos{
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.btnMas{
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }

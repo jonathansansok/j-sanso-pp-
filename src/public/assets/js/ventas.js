@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <section class="buyApi">
                     <h3 class="titleBuy">${prod.titulo}</h3>
                     <p class="textoDeBuy">${prod.descrip}</p>
-                    <p class="price">Price: USD ${prod.precio}.-</p>
+                    <p class="price">Price: $ ${prod.precio}.-</p>
                     <div class="botonesCarrito">
                     <input type="button" value="Quitar Unidad" class="botonRemove" id="botonRemove${prod.id}"/>
                         <input type="button" value="Agregar Unidad" class="botonAdd" id="botonAdd${prod.id}"/>
