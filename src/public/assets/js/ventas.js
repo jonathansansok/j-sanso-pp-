@@ -34,6 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  const vaciarCarrito = () => {
+    carrito = [];
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    actualizarCantidadCarrito();
+    console.log("Carrito vacío");
+  };
+
   function cargarJson() {
     fetch("../public/assets/json/productos.json")
       .then((resp) => resp.json())
@@ -56,16 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     seccion.innerHTML = "";
     for (const prod of array) {
       seccion.innerHTML += `
-                <section class="buyApi">
-                    <h3 class="titleBuy">${prod.titulo}</h3>
-                    <p class="textoDeBuy">${prod.descrip}</p>
-                    <p class="price">Price: $ ${prod.precio}.-</p>
-                    <div class="botonesCarrito">
-                    <input type="button" value="Quitar Unidad" class="botonRemove" id="botonRemove${prod.id}"/>
-                        <input type="button" value="Agregar Unidad" class="botonAdd" id="botonAdd${prod.id}"/>
-                    </div>
-                </section>
-            `;
+        <section class="buyApi">
+          <h3 class="titleBuy">${prod.titulo}</h3>
+          <p class="textoDeBuy">${prod.descrip}</p>
+          <p class="price">Price: $ ${prod.precio}.-</p>
+          <div class="botonesCarrito">
+            <input type="button" value="Quitar Unidad" class="botonRemove" id="botonRemove${prod.id}"/>
+            <input type="button" value="Agregar Unidad" class="botonAdd" id="botonAdd${prod.id}"/>
+          </div>
+        </section>
+      `;
     }
   };
 
@@ -109,4 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
       darAccionABotones(productosFiltrados);
     }
   }
+
+  // Añadir el evento de clic para el botón de vaciar carrito
+  document.getElementById("vaciarCarrito").addEventListener("click", vaciarCarrito);
 });

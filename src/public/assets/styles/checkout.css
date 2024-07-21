@@ -1,47 +1,57 @@
 .cielo {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; /* Ajusta el contenido a la derecha */
-  }
-  
-  .position-relative {
-    height: 100px;
-  }
-  
-  .botonesCheckout {
-    color: white;
-  }
-  
-  .cieloLista {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .titleParticularCommerce {
-    border-radius: 10px;
-  }
-  
-  h5 {
-    font-size: 12px !important;
-  }
-  
-  .swal2-styled.swal2-cancel.copy-button {
-    background-color: green;
-  }
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Ajusta el contenido a la derecha */
+}
 
+.position-relative {
+  height: 100px;
+}
+.video-video-introCheckout {
+  height: 140px;
+  margin-bottom: 30px;
+}
 
+.cielo ul {
+  margin-bottom: 0;
+  margin-top: 9px;
+}
+.cielo ul li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.botonesCheckout {
+  color: white;
+}
 
-  .articlesCheckOut {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra tenue */
-    padding: 20px;
-    border-radius: 8px;
+.cieloLista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titleParticularCommerce {
+  border-radius: 10px;
+}
+
+h5 {
+  font-size: 12px !important;
+}
+
+.swal2-styled.swal2-cancel.copy-button {
+  background-color: green;
+}
+
+.articlesCheckOut {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .containerCheckout {
-    margin: 20px;
+  margin: 20px;
 }
 
 .formCheckOut {
@@ -52,41 +62,43 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave del último estilo */
 }
 
-#nombre, #apellido, #direccion {
-    color: #333; /* Texto oscuro */
-    font-weight: bold; /* Fuente un poco más gruesa */
-    border: 1px solid #ccc; /* Borde gris claro */
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    background-color: white;
+#nombre,
+#apellido,
+#direccion {
+  color: #333; /* Texto oscuro */
+  font-weight: bold; /* Fuente un poco más gruesa */
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: white;
 }
 
-#nombre:hover, #apellido:hover, #direccion:hover {
-    border-color: #007bff; /* Borde azul al pasar el mouse */
+#nombre:hover,
+#apellido:hover,
+#direccion:hover {
+  border-color: #007bff; /* Borde azul al pasar el mouse */
 }
 
 .btn {
-    background-color: #007bff; /* Fondo azul */
-    color: white; /* Texto blanco */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  background-color: #007bff; /* Fondo azul */
+  color: white; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+  background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
 }
 
 .total {
-    margin-top: 20px;
-    border-top: 2px solid #ccc; /* Borde gris claro */
-    padding-top: 10px;
+  margin-top: 20px;
+  border-top: 2px solid #ccc; /* Borde gris claro */
+  padding-top: 10px;
 }
-
-
 
 /* Otras clases y estilos adicionales según sea necesario */
 /* Estilos para los botones de cantidad */
@@ -121,9 +133,7 @@
   border-radius: 5px; /* Usamos el borde redondeado del primer estilo */
   box-shadow: 0 0 15px rgba(121, 120, 120, 0.7); /* Sombra gris del último estilo */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave del último estilo */
-
 }
-
 
 /* Estilos para la cantidad */
 .cantidad {
@@ -131,34 +141,42 @@
   margin: 0 10px;
 }
 
-.btnEliminar {
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg); /* Ajusta el ángulo de rotación */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.btnEliminar,
+.btnMenos,
+.btnMas {
   margin-left: 15px;
   border-radius: 5px;
   border: 1px solid #ddd;
-  padding: 5px;
+  padding: 5px 15px; /* Igualar el padding para todos los botones */
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
-
-.btnEliminar:hover {
+.btnEliminar:hover,
+.btnMenos:hover,
+.btnMas:hover {
   background-color: #f5f5f5; /* Color de fondo al pasar el cursor */
   box-shadow: 0 0 15px rgba(128, 128, 128, 1); /* Sombra más pronunciada al pasar el cursor */
 }
 
-.btnMenos{
-  margin-left: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  padding: 5px 15px;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+.btnEliminar:active,
+.btnMenos:active,
+.btnMas:active {
+  animation: rotate 0.8s ease; /* Duración y tipo de la animación */
 }
 
-.btnMas{
-  margin-left: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  padding: 5px 15px;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.7); /* Sombra gris */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+
+.articlesCheckOut {
+  margin-bottom: 40px;
 }

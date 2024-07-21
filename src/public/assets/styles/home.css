@@ -1832,9 +1832,7 @@ main {
   }
 }
 
-.contadorUnidades {
-  color: black;
-}
+
 
 
 .fotoDeApi {
@@ -2279,7 +2277,7 @@ main {
   align-items: center;
   justify-items: center;
   background-color: black;
-  border-top: 1px solid black;
+/*   border-top: 1px solid black; */
   width: 100%;
   /* ------TERMINA CONDICIONAL ------ */
 }
@@ -2542,7 +2540,7 @@ textarea textarea {
   flex-wrap: wrap;
   margin-top: 8px;
   margin-bottom: 60px;
-  gap: 5px 5px;
+  gap: 8px;
   width: 80%;
 }
 
@@ -2550,7 +2548,7 @@ textarea textarea {
   background-color: white;
   width: 80%;
   font-weight: bold;
-  height: 60px;
+  height: 100px;
   margin-top: 30px;
   margin-right: 0px;
   border-radius: 10px;
@@ -2574,20 +2572,7 @@ textarea textarea {
   justify-content: center;
 }
 
-.shoppingTodo {
-  background-color: white; /* Fondo blanco */
-  border-radius: 3px;
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; /* Centra los elementos dentro del contenedor */
-  align-items: center; /* Centra verticalmente los elementos */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
-}
 
-.shoppingTodo:hover {
-  background-color: #ff1493; /* Cambio de color de fondo al pasar el mouse */
-}
 
 .checkoutWay {
   width: 100%;
@@ -2596,22 +2581,9 @@ textarea textarea {
   justify-content: center;
   align-items: center;
   width: 80%;
-  /*     .shoppingCart{
-           margin-left: 50px;
-          margin-right: 50px;
-          margin-top: 15px; 
-      } */
 }
 
-.contadorUnidades {
-  color: black;
-  background-color: #4ca725;
-  width: 30px;
-  height: 25px;
-  text-align: center;
-  border-radius: 50%;
-  margin: 7px 0px 0px 5px;
-}
+
 
 .buyApi {
   box-sizing: border-box;
@@ -2623,11 +2595,16 @@ textarea textarea {
   align-items: center;
   border-radius: 10px;
   text-align: center;
-  margin-top: 20px; /* Ajusta según sea necesario */
-  padding: 20px; /* Ajusta según sea necesario */
+  margin-top: 20px;
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.buyApi:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .titleBuy {
   color: black; /* Color de texto */
   padding: 5px 10px; /* Padding interno */
@@ -2652,6 +2629,31 @@ textarea textarea {
 
 .price {
   margin: 2px 10px 4px 10px;
+}@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg); /* Ajusta el ángulo de rotación */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flash {
+  0% {
+    background-color: #13bb13;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: #13bb13;
+  }
+  100% {
+    background-color: #13bb13;
+    color: white;
+  }
 }
 
 .botonAdd,
@@ -2669,6 +2671,12 @@ textarea textarea {
   transform: scale(1.05);
 }
 
+.botonAdd:active,
+.botonRemove:active {
+  animation: flash 0.8s, rotate 0.8s;
+  /* La animación de flash y rotación se aplican juntas */
+
+}
 .botonesCarrito {
   display: flex;
   justify-content: space-between;
@@ -2859,12 +2867,7 @@ textarea textarea {
     margin-right: 0px;
   }
 }
-@media (max-width: 501px) {
-  .contadorUnidades {
-    width: 30%;
-    margin-left: 0px;
-  }
-}
+
 @media (max-width: 480px) {
   .iconWeb {
     width: 33%;

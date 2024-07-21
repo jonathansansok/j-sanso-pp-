@@ -122,7 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const direccion = document.getElementById("direccion").value.trim();
 
     if (nombre === "" || apellido === "" || direccion === "") {
-      alert("Por favor completa todos los campos: Nombre, Apellido y Dirección.");
+      alert(
+        "Por favor completa todos los campos: Nombre, Apellido y Dirección."
+      );
       return;
     }
 
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       html: mensaje,
       icon: "info",
       showCancelButton: true,
-      confirmButtonText: "Volver a Home",
+      confirmButtonText: "No, volver a Home",
       cancelButtonText: "Copiar y enviar por What's App",
       customClass: {
         cancelButton: "copy-button",

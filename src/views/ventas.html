@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../public/assets/styles/home.css" />
+    <link rel="stylesheet" href="../public/assets/styles/ventas.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="estilos\favicon\favicon1.ico" type="image/x-icon" />
@@ -117,22 +118,24 @@
         <article class="carritoTodo">
             <section class="buyModifiers">
                 <div class="todosParametros">
-                    <form id="buscador">
-                        <div class="row">
-                            <div class="marcaTodo">
-                                <label origenEscrito="origen">Calidad</label>
-                                <select class="selectContainerOk" id="selectContainer">
-                                    <option class="Seleccion" id="elija" value="">HD/4K</option>
-                                    <option class="usa" value="HD">HD</option> 
-                                    <option class="uk" value="4K">4K</option>
-                                </select>
-                            </div>
+                  <form id="buscador">
+                    <div class="row buscadorInside">
+                        <div class="marcaTodo">
+                            <label origenEscrito="origen">Tipo</label>
+                            <select class="selectContainerOk" id="selectContainer">
+                                <option class="Seleccion" id="elija" value="">HD/4K</option>
+                                <option class="usa" value="HD">HD</option> 
+                                <option class="uk" value="4K">4K</option>
+                            </select>
                         </div>
-                    </form>
+                    </div>
+                </form>
                     <div class="shoppingTodo">
                         <a id="shoppingLogo" class="shoppingCart" href="checkout.html" target="_blank"><img src="https://icongr.am/fontawesome/shopping-cart.svg?size=60&color=4ca725" alt="shopping cart"></a>
                         <p class="contadorUnidades" id="contadorId">00</p>
+
                     </div>
+                    <button id="vaciarCarrito" class="vaciarCarrito">Vaciar solicitud</button> <!-- Botón para vaciar carrito -->
                 </div>
             </section>
             <section id="renderProds"></section>

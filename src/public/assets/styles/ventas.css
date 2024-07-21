@@ -1,0 +1,144 @@
+#buscador {
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave para la sombra */
+}
+
+#buscador:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg); /* Ajusta el ángulo de rotación */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.shoppingTodo {
+  background-color: white; /* Fondo blanco */
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  width: 190px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centra los elementos dentro del contenedor */
+  align-items: center; /* Centra verticalmente los elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra gris por defecto */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el cambio de color de fondo y sombra */
+}
+.contadorUnidades {
+    color: black;
+    background-color: #4ca725;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin: -20px 0px 0px 5px;
+  }
+@media (max-width: 501px) {
+    .contadorUnidades {
+      width: 30%;
+      margin-left: 0px;
+    }
+  }
+.shoppingTodo:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más grande al pasar el mouse */
+}
+
+.vaciarCarrito {
+  background: #ff4d4d;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.8); /* Aumenta el tamaño y la opacidad de la sombra */
+  transition: box-shadow 0.8s ease, color 0.8s ease; /* Transición suave para la sombra y el color */
+}
+
+.vaciarCarrito:hover {
+  color: black; /* Cambia el color del texto al pasar el cursor */
+  box-shadow: 0 0 25px rgba(128, 128, 128, 1); /* Aumenta el tamaño de la sombra al pasar el cursor */
+}
+
+.vaciarCarrito:active {
+  animation: rotate 0.4s ease; /* Duración y tipo de la animación */
+}
+@media (max-width: 700px) {
+  .todosParametros {
+    flex-wrap: wrap;
+    height: 160px;
+  }
+  .vaciarCarrito {
+    font-size: 18px;
+  }
+}
+
+.marcaTodo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Centra verticalmente el contenido */
+  gap: 10px; /* Espacio entre el label y el select */
+  margin-bottom: 7px; /* Espacio inferior para separar de otros elementos */
+}
+
+.buscadorInside {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilo para el label */
+label[origenEscrito="origen"] {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Opcional: transforma el texto a mayúsculas */
+  letter-spacing: 1px; /* Opcional: espaciado entre letras */
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+label[origenEscrito="origen"]:hover {
+  color: #007bff; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para el select */
+.selectContainerOk {
+  font-size: 5px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.selectContainerOk:focus {
+  border-color: #007bff; /* Cambia el borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra más destacada al enfocar */
+  outline: none; /* Elimina el borde predeterminado del enfoque */
+}
+
+/* Estilo para las opciones */
+.selectContainerOk option {
+  font-size: 16px;
+  color: #333;
+}
+
+.selectContainerOk option:hover {
+  background-color: #f1f1f1; /* Color de fondo al pasar el cursor sobre una opción */
+}
